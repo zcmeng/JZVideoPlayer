@@ -131,7 +131,7 @@ public abstract class Jzvd extends FrameLayout implements View.OnClickListener, 
         progressBar.setOnSeekBarChangeListener(this);
         bottomContainer.setOnClickListener(this);
         textureViewContainer.setOnClickListener(this);
-        textureViewContainer.setOnTouchListener(this);
+//        textureViewContainer.setOnTouchListener(this);
 
         mScreenWidth = getContext().getResources().getDisplayMetrics().widthPixels;
         mScreenHeight = getContext().getResources().getDisplayMetrics().heightPixels;
