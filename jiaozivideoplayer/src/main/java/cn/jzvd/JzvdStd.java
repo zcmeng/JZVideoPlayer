@@ -156,6 +156,7 @@ public class JzvdStd extends Jzvd {
         changeUiToComplete();
         cancelDismissControlViewTimer();
         bottomProgressBar.setProgress(100);
+        completeInterface.onAutoComplete();
     }
 
     @Override
@@ -755,11 +756,15 @@ public class JzvdStd extends Jzvd {
         }
 
     }
-
+    private JZCompleteInterface completeInterface;
+    public void setComplete(JZCompleteInterface completeInterface){
+        this.completeInterface = completeInterface;
+    }
     @Override
     public void onAutoCompletion() {
         super.onAutoCompletion();
         cancelDismissControlViewTimer();
+        completeInterface.onAutoComplete();
     }
 
     @Override
