@@ -874,7 +874,7 @@ public abstract class Jzvd extends FrameLayout implements View.OnClickListener, 
         }
     };
 
-    public static void goOnPlayOnResume() {
+    public void goOnPlayOnResume() {
         if (CURRENT_JZVD != null) {
             if (CURRENT_JZVD.state == Jzvd.STATE_PAUSE) {
                 if (ON_PLAY_PAUSE_TMP_STATE == STATE_PAUSE) {
@@ -889,7 +889,7 @@ public abstract class Jzvd extends FrameLayout implements View.OnClickListener, 
         }
     }
 
-    public static void goOnPlayOnPause() {
+    public void goOnPlayOnPause() {
         if (CURRENT_JZVD != null) {
             if (CURRENT_JZVD.state == Jzvd.STATE_AUTO_COMPLETE ||
                     CURRENT_JZVD.state == Jzvd.STATE_NORMAL ||
