@@ -763,7 +763,7 @@ public class JzvdStd extends Jzvd {
     public void onAutoCompletion() {
         super.onAutoCompletion();
         cancelDismissControlViewTimer();
-//        completeInterface.onAutoComplete();
+        completeInterface.onAutoComplete();
     }
 
     @Override
